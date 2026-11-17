@@ -68,8 +68,8 @@ class _AddWorkoutScreenState extends State<AddWorkoutScreen>{
                 ),
                 items: _categories.map((String category){
                   return DropdownMenuItem<String>(
-                    child: Text(category),
                     value: category,
+                    child: Text(category),
                     );
                   }
                 ).toList(),
@@ -101,8 +101,7 @@ class _AddWorkoutScreenState extends State<AddWorkoutScreen>{
               ),
               Spacer(),
               ElevatedButton(
-                onPressed: _saveWorkout, 
-                child: Text('Guardar rutina', style: TextStyle(fontSize: 18)),
+                onPressed: _saveWorkout,
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.symmetric(vertical: 16),
                   backgroundColor: Colors.blueAccent,
@@ -111,6 +110,7 @@ class _AddWorkoutScreenState extends State<AddWorkoutScreen>{
                     borderRadius: BorderRadiusGeometry.circular(12),
                   )
                 ), 
+                child: Text('Guardar rutina', style: TextStyle(fontSize: 18)), 
               )
             ],
           ),
