@@ -1,5 +1,6 @@
 import 'package:fit_track_pro/core/storage/local_storage_service.dart';
 import 'package:fit_track_pro/features/auth/screens/login_screen.dart';
+import 'package:fit_track_pro/features/weigths/screens/weight_screen.dart';
 import 'package:fit_track_pro/features/workouts/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,7 @@ class _AuthCheckScreenState extends State<AuthCheckScreen>{
       //HOme
       Navigator.pushReplacement(
         context, 
-        MaterialPageRoute(builder: (context) => HomeScreen()),
+        MaterialPageRoute(builder: (context) => WeightScreen()),
       );
     }else{
       //Login
